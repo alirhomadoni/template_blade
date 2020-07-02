@@ -11,9 +11,16 @@
 |
 */
 //home 
-Route::get('/', 'HomeController@home');
-Route::get('/home', 'HomeController@home');
+//Route::get('/', 'HomeController@home');
+//Route::get('/home', 'HomeController@home');
 
 //register and form 
-Route::get('/register', 'AuthController@register');
-Route::post('/welcomename', "AuthController@welcomename");
+//Route::get('/register', 'AuthController@register');
+//Route::post('/welcomename', "AuthController@welcomename");
+Route::get('/master', 'AuthController@master');
+Route::get('/items', 'AuthController@items');
+Route::get('/items/create', 'AuthController@create');
+Route::get('/', 'AuthController@tugas_template_blade');
+Route::get('/data-tables', 'AuthController@data_tabel');
+
+

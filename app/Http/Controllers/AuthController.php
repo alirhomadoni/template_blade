@@ -16,8 +16,21 @@ class AuthController extends Controller
         //$nama=$request["FirstName"];
         return view('welcomename',["nama"=>$nama]);
        // return "Welcome ".$nama;
-   
-
+    }
+    public function master(){
+        return view('adminlte/master');
+    }
+    public function items(){
+        return view('adminlte/items/index');    
+    }
+    public function create(){
+        return view('adminlte/items/create');
+    }
+    public function tugas_template_blade(){
+        return view('adminlte/tugas_template_blade/index');
+    }
+    public function data_tabel(){
+        return view('adminlte/tugas_template_blade/data_tabel');
     }
 
 }
